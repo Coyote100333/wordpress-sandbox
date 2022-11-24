@@ -18,6 +18,12 @@
     yarn install
     ```
 
+1. Import libraries.
+
+    ```bash
+    composer install
+    ```
+
 1. Start the local environment.
 
     ```bash
