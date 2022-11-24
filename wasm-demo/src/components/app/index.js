@@ -44,7 +44,7 @@ export default () => {
 
 					<FlexItem>
 						<Iframe
-							src={ `${ BASE_URL }?${ url }&mode=seamless` }
+							src={ `${ BASE_URL }${ url }&mode=seamless` }
 						/>
 					</FlexItem>
 				</Flex>
