@@ -1,0 +1,14 @@
+{
+  "name": "wporg-wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wp-env": "wp-env"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/env": "^5.7.0"
+  }
+}

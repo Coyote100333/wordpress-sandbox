@@ -1,0 +1,98 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wporg-demo-browser {
+	
+	iframe {
+		border: 1px solid var(--wp--preset--color--light-grey-1);;
+	}
+
+	> * {
+		padding: 1rem;
+	}
+
+}
+
+.wporg-tab-panel {
+	min-width: 200px;
+
+	> *:first-child {
+		border-bottom: 1px solid var(--wp--preset--color--light-grey-1);
+	}
+
+	.active-tab {
+		border-bottom: 2px solid var(--wp--preset--color--blueberry-1);
+	}
+
+	.wporg-tab-panel-inner {
+
+		h2, p {
+			padding: 0 1rem;
+			font-size: 12px;
+			margin: 0;
+		}
+
+		h2 {
+			font-weight: 600;
+			margin: 1rem 0 4px;
+		}
+		p {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.components-tab-panel__tabs-item:focus:not(:disabled) {
+	box-shadow: none !important;
+}
+
+.wporg-tab-item-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		padding: 1rem;
+		border: 2px solid transparent;	
+		border-radius: 2px;
+	}
+
+	li:hover {
+		border-color: var(--wp--custom--button--border--color);
+	}
+
+	li a {
+		color: #1e1e1e;
+		line-height: 14px;
+	}
+
+	li a:hover {
+		text-decoration: none;
+	}
+
+	h3 {
+		font-size: 14px;
+		margin: 0;
+	}
+
+	img {
+		width: 40px;
+		height: 40px;
+		display: block;
+		border: 1px solid #efefef;
+	}
+
+	span {
+		font-size: 8px;
+	}
+}
+
+.wporg-demo-browser-preview-bar { 
+	padding: 0.75rem;
+	font-size: 12px;
+	background: var(--wp--preset--color--blueberry-4);
+}

@@ -1,0 +1,68 @@
+{
+	"name": "wporg/wporg-wasm",
+	"description": "",
+	"homepage": "https://wordpress.org",
+	"license": "GPL-2.0-or-later",
+	"support": {
+		"issues": "https://github.com/WordPress/wporg-wasm/issues"
+	},
+	"config": {
+		"platform": {
+			"php": "7.4"
+		},
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"extra": {
+		"installer-paths": {
+			"source/wp-content/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"source/wp-content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"source/wp-content/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org/"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:WordPress/wporg-repo-tools.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:WordPress/wporg-mu-plugins.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:WordPress/wporg-parent-2021.git"
+		}
+	],
+	"require": {},
+	"require-dev": {
+		"composer/installers": "~1.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"phpunit/phpunit": "^7.5.20",
+		"wp-coding-standards/wpcs": "2.*",
+		"wp-phpunit/wp-phpunit": "^5.4",
+		"wpackagist-plugin/gutenberg": "*",
+		"wpackagist-plugin/jetpack": "*",
+		"wpackagist-plugin/wordpress-importer": "*",
+		"wporg/wporg-repo-tools": "dev-trunk",
+		"wporg/wporg-mu-plugins": "dev-build",
+		"wporg/wporg-parent-2021": "dev-build"
+	},
+	"scripts": {
+		"format": "phpcbf -p",
+		"lint": "phpcs"
+	}
+}
