@@ -5,42 +5,17 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+ html {
+	--wp-global-header-height: 0px !important;
+}
+
 .wporg-demo-browser {
+	background-color: #fff;
+	border-radius: 4px;
+
 	iframe {
-		border: 1px solid var(--wp--preset--color--light-grey-1);;
+		border: none;
 	}
-}
-
-.wporg-tab-panel {
-	min-width: 200px;
-
-	> *:first-child {
-		border-bottom: 1px solid var(--wp--preset--color--light-grey-1);
-	}
-
-	.active-tab {
-		border-bottom: 2px solid var(--wp--preset--color--blueberry-1);
-	}
-
-	.wporg-tab-panel-inner {
-		h2, p {
-			padding: 0 1rem;
-			font-size: 12px;
-			margin: 0;
-		}
-
-		h2 {
-			font-weight: 600;
-			margin: 1rem 0 4px;
-		}
-		p {
-			margin-bottom: 8px;
-		}
-	}
-}
-
-.components-tab-panel__tabs-item:focus:not(:disabled) {
-	box-shadow: none !important;
 }
 
 .wp-block-create-block-wasm-demo,
@@ -54,18 +29,6 @@
 	margin-bottom: 20px;
 	padding: 0;
 
-	.wporg-tab-item-list-item {
-		position: relative;
-		outline: 1px solid #dedede;
-		border-radius: 2px;
-		cursor: pointer;
-		transition: outline-color ease-in 0.1s;
-
-		width: 31%;
-		min-width: 200px;
-		flex-grow: 1;
-	}
-
 	/* A CSS hack to grow all flexbox lines but the last one*/
 	&:after {
 		content: "";
@@ -77,6 +40,10 @@
 		color: #1e1e1e;
 		line-height: 14px;
 		text-decoration: none;
+
+		img { 
+			border: 1px solid var(--wp--preset--color--light-grey-1);
+		}
 	}
 
 	.components-checkbox-control__input-container {
@@ -88,12 +55,12 @@
 
 	.wporg-tab-item-list__item-name {
 		background: hsla(0,0%,100%,.65);
-		color: #555;
-		font-size: clamp(14px, 2vw, 17px);
-		font-weight: 600;
+		color: var(--wp--preset--color--charcoal-1);
+		font-size: 12px;
+		font-weight: 400;
 		margin: 0;
 		overflow: hidden;
-		padding: clamp(5px, 1vw, 15px);
+		padding: 8px 0;
 	}
 
 	.wporg-tab-item-list__overlay {
@@ -120,8 +87,8 @@
 		outline-color: var(--wp--preset--color--pale-cyan-blue);
 	}
 
-	.wporg-tab-item-list-item.is-active {
-		outline-color: var(--wp--preset--color--vivid-cyan-blue);
+	.wporg-tab-item-list-item.is-active img {
+		outline: 1px solid var(--wp--preset--color--vivid-cyan-blue);
 		outline-width: 2px;
 
 		.wporg-tab-item-list__overlay {
@@ -131,22 +98,37 @@
 
 
 	&.is-theme {
+		.wporg-tab-item-list-item {
+			position: relative;
+			border-radius: 2px;
+			cursor: pointer;
+			transition: outline-color ease-in 0.1s;
+	
+			max-width: 200px;
+			min-width: 100px;
+			flex-grow: 1;
+		}
+
 		img {
 			width: 100%;
 			aspect-ratio: 195/146;
-		}
-
-		.wporg-tab-item-list__item-name {
-			min-height: 18px;
-			border-top: 1px solid #dedede;
+			border-radius: 2px;
 		}
 	}
 
 	&.is-plugin {
+		margin-bottom: 100px;
+
 		img {
-			width: 64px;
-			height: 64px;
+			width: 32px;
+			height: 32px;
+			border-radius: 4px;
 		}
+		
+		.wporg-tab-item-list-item {
+			margin: 0 0 1rem;
+		}
+
 		.wporg-tab-item-list__item-name {
 			margin: auto;
 		}
@@ -154,7 +136,9 @@
 }
 
 .wporg-demo__viewport-controls {
-	margin-bottom: 1.5rem;
+	background-color: #000;
+	padding: 8px;
+	border-radius:  4px 4px 0 0;
 }
 
 .wporg-demo__viewport {
@@ -163,11 +147,8 @@
 }
 
 .wporg-section-title {
-	margin: 1.2rem 0 0.8rem 0;
-
-	&:first-child {
-		margin-top: 0;
-	}
+	margin: 1.8rem 0 1rem 0;
+	font-size: var(--wp--preset--font-size--normal);
 }
 
 .wp-block-create-block-wasm-demo .wporg-tab-item-list__confirm {
@@ -182,4 +163,14 @@
 	padding: 0.75rem;
 	font-size: 12px;
 	background: var(--wp--preset--color--blueberry-4);
+}
+
+.wporg-setup-footer {
+	position: fixed;
+	background-color: #fff;
+	bottom: 0;
+	left:0;
+	padding: 1rem;
+	width: 100%;
+	border-top: 1px solid var(--wp--preset--color--light-grey-1);
 }

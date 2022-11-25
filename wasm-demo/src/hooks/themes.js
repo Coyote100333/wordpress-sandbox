@@ -18,7 +18,7 @@ const themes = [
 		zip: 'twentytwentytwo.latest-stable.zip',
 	},
 	{
-		url: 'https://wp-themes.com/twentytwentyOne',
+		url: 'https://wp-themes.com/twentytwentyone',
 		name: 'Twenty Twenty-One',
 		zip: 'twentytwentyone.latest-stable.zip',
 	},
