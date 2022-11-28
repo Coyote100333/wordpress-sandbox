@@ -16,8 +16,6 @@ import Checkbox from '../checkbox';
 import { useThemes } from '../../hooks/themes';
 import { usePlugins } from '../../hooks/plugins';
 
-const BASE_URL = 'https://wasm.wordpress.net/wordpress.html';
-
 export default ( { onSubmit } ) => {
 	const { themes, activeTheme, setActiveTheme } = useThemes();
 	const { plugins, activePlugins, toggleActivePlugin } = usePlugins();
