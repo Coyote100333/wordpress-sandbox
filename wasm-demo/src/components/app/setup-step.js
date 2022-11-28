@@ -8,13 +8,10 @@ import {
 	Modal,
 	Button,
 } from '@wordpress/components';
-import { useEffect, useState } from '@wordpress/element';
-import { addQueryArgs } from '@wordpress/url';
 
 /**
  * Internal dependencies
  */
-import Iframe from '../iframe';
 import Checkbox from '../checkbox';
 import { useThemes } from '../../hooks/themes';
 import { usePlugins } from '../../hooks/plugins';
@@ -88,11 +85,13 @@ export default ( { onSubmit } ) => {
 					<h4 className="wporg-section-title">
 						2. Choose a few plugins
 					</h4>
-					<ul
+					<Flex
 						className="wporg-tab-item-list is-plugin"
+						wrap={ true }
+						gap="16px"
 					>
 						{ plugins.map( ( plugin ) => (
-							<li
+							<FlexItem
 								key={ plugin.zip }
 								className={
 									'wporg-tab-item-list-item ' +
@@ -117,12 +116,19 @@ export default ( { onSubmit } ) => {
 										>
 											{ plugin.name }
 										</FlexBlock>
+										<FlexItem>
+											<Checkbox
+												checked={ activePlugins.includes(
+													plugin
+												) }
+											/>
+										</FlexItem>
 									</Flex>
 								</a>
 								<div className="wporg-tab-item-list__overlay" />
-							</li>
+							</FlexItem>
 						) ) }
-					</ul>
+					</Flex>
 
 					<div className="wporg-setup-footer">
 						<Button

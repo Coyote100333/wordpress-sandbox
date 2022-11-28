@@ -87,16 +87,6 @@
 		outline-color: var(--wp--preset--color--pale-cyan-blue);
 	}
 
-	.wporg-tab-item-list-item.is-active img {
-		outline: 1px solid var(--wp--preset--color--vivid-cyan-blue);
-		outline-width: 2px;
-
-		.wporg-tab-item-list__overlay {
-			opacity: 1;
-		}
-	}
-
-
 	&.is-theme {
 		.wporg-tab-item-list-item {
 			position: relative;
@@ -107,6 +97,13 @@
 			max-width: 200px;
 			min-width: 100px;
 			flex-grow: 1;
+
+			&.is-active img {
+				position: relative;
+				outline: 1px solid var(--wp--preset--color--vivid-cyan-blue);
+				outline-width: 2px;
+		
+			}
 		}
 
 		img {
@@ -126,7 +123,7 @@
 		}
 		
 		.wporg-tab-item-list-item {
-			margin: 0 0 1rem;
+			flex-basis: 49%;
 		}
 
 		.wporg-tab-item-list__item-name {
