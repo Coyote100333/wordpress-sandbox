@@ -8,8 +8,7 @@ import {
 	FlexBlock,
 	FlexItem,
 } from '@wordpress/components';
-import { useEffect, useState, useRef, forwardRef } from '@wordpress/element';
-import { addQueryArgs } from '@wordpress/url';
+import { useRef, forwardRef } from '@wordpress/element';
 
 /**
  * Internal dependencies
