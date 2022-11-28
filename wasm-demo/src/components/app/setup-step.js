@@ -20,8 +20,6 @@ export default ( { onSubmit } ) => {
 	const { themes, activeTheme, setActiveTheme } = useThemes();
 	const { plugins, activePlugins, toggleActivePlugin } = usePlugins();
 
-	const mShotsUrl = 'https://wordpress.com/mshots/v1/';
-
 	return (
 		<Modal
 			isFullScreen={ true }
@@ -62,11 +60,7 @@ export default ( { onSubmit } ) => {
 										gap={ 0 }
 									>
 										<FlexItem>
-											<img
-												src={ `${ mShotsUrl }${ encodeURIComponent(
-													theme.url + '?v=20221125'
-												) }` }
-											/>
+											<img src={ theme.thumbnail } />
 										</FlexItem>
 										<FlexBlock
 											as="h3"

@@ -9,16 +9,19 @@ const StateContext = createContext();
 const themes = [
 	{
 		url: 'https://wp-themes.com/twentytwentythree',
+		thumbnail: 'https://i0.wp.com/themes.svn.wordpress.org/twentytwentythree/1.0/screenshot.png?w=572&strip=all',
 		name: 'Twenty Twenty-Three',
 		zip: 'twentytwentythree.latest-stable.zip',
 	},
 	{
 		url: 'https://wp-themes.com/twentytwentytwo',
+		thumbnail: 'https://i0.wp.com/themes.svn.wordpress.org/twentytwentytwo/1.3/screenshot.png?w=572&strip=all',
 		name: 'Twenty Twenty-Two',
 		zip: 'twentytwentytwo.latest-stable.zip',
 	},
 	{
 		url: 'https://wp-themes.com/twentytwentyone',
+		thumbnail: 'https://i0.wp.com/themes.svn.wordpress.org/twentytwentyone/1.7/screenshot.png?w=572&strip=all',
 		name: 'Twenty Twenty-One',
 		zip: 'twentytwentyone.latest-stable.zip',
 	},
