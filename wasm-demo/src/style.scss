@@ -142,10 +142,16 @@
 		}
 		
 		.wporg-tab-item-list-item {
-			flex-basis: 49%;
+			border: 1px solid #dedede;
+			border-radius: 4px;
+			padding: 8px 12px;
 
-			a:hover {
-				text-decoration: none;;
+			a {
+				text-decoration: none;
+			}
+
+			&.is-active {
+				border-color: var(--wp--preset--color--vivid-cyan-blue);
 			}
 		}
 

@@ -86,8 +86,9 @@ export default ( { onSubmit } ) => {
 					</h4>
 					<Flex
 						className="wporg-tab-item-list is-plugin"
+						justify="flex-start"
 						wrap={ true }
-						gap="16px"
+						gap="8px"
 					>
 						{ plugins.map( ( plugin ) => (
 							<FlexItem
@@ -102,7 +103,7 @@ export default ( { onSubmit } ) => {
 							>
 								<a href="#">
 									<Flex
-										align="flex-start"
+										align="center"
 										direction="row"
 										gap={ 2 }
 									>
