@@ -8,11 +8,6 @@ const StateContext = createContext();
 
 const plugins = [
 	{
-		name: 'WooCommerce',
-		zip: 'woocommerce.latest-stable.zip',
-		icon: 'https://ps.w.org/woocommerce/assets/icon-256x256.png'
-	},
-	{
 		name: 'Coblocks',
 		zip: 'coblocks.latest-stable.zip',
 		icon: 'https://ps.w.org/coblocks/assets/icon-256x256.jpg'
@@ -51,6 +46,11 @@ const plugins = [
 		name: 'Hello Dolly',
 		zip: 'hello-dolly.latest-stable.zip',
 		icon: 'https://ps.w.org/hello-dolly/assets/icon-256x256.jpg'
+	},
+	{
+		name: 'Yoast SEO',
+		zip: 'wordpress-seo.latest-stable.zip',
+		icon: 'https://ps.w.org/wordpress-seo/assets/icon-256x256.png'
 	},
 ];
 
