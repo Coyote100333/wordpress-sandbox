@@ -143,6 +143,10 @@
 		
 		.wporg-tab-item-list-item {
 			flex-basis: 49%;
+
+			a:hover {
+				text-decoration: none;;
+			}
 		}
 
 		.wporg-tab-item-list__item-name {
