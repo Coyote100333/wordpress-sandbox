@@ -12,9 +12,14 @@
 .wporg-demo-browser {
 	background-color: #fff;
 	border-radius: 4px;
+	height: calc( 100vh - var(--wp--preset--spacing--60) * 2);
+	display: flex;
+    flex: 1;
+    flex-direction: column;
 
 	iframe {
 		border: none;
+		flex-grow: 1
 	}
 
 	animation: pulse 6s ease-in infinite;
@@ -167,7 +172,8 @@
 }
 
 .wporg-demo__viewport {
-	border: 1px solid #dedede;
+	display: flex;
+	flex-grow: 1;
 	border-radius: 2px;
 }
 

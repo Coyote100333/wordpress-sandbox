@@ -51,11 +51,13 @@ export default forwardRef( ( { onClickBack }, ref ) => {
 					</Button>
 				</FlexItem>
 			</Flex>
-			<Iframe
-				src={ url }
-				ref={ iframeRef }
-				className="wporg-demo__viewport"
-			/>
+            <div className="wporg-demo__viewport">
+    			<Iframe
+    				src={ url }
+    				ref={ iframeRef }
+    				
+    			/>
+            </div>
 		</div>
 	);
 } );
