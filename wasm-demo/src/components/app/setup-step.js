@@ -82,7 +82,7 @@ export default ( { onSubmit } ) => {
 					</Flex>
 
 					<h4 className="wporg-section-title">
-						2. Choose a few plugins
+						2. Add a few plugins
 					</h4>
 					<Flex
 						className="wporg-tab-item-list is-plugin"
