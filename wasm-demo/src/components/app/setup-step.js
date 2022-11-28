@@ -27,6 +27,7 @@ export default ( { onSubmit } ) => {
 			isFullScreen={ true }
 			title="In-Browser WordPress"
 			onRequestClose={ onSubmit }
+            className="wporg-setup-modal"
 		>
 			<p>
 				Welcome to a new and exciting way fo testing WordPress Themes
@@ -39,7 +40,7 @@ export default ( { onSubmit } ) => {
 					<h4 className="wporg-section-title">1. Select a theme</h4>
 					<Flex
 						as="ul"
-						align="flex-start"
+						justify="flex-start"
 						className="wporg-tab-item-list is-theme"
 						wrap={ true }
 						gap="16px"
