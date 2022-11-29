@@ -13,6 +13,31 @@ const plugins = [
 		icon: 'https://ps.w.org/coblocks/assets/icon-256x256.jpg'
 	},
 	{
+		name: 'bbPress',
+		zip: 'bbpress.latest-stable.zip',
+		icon: 'https://ps.w.org/bbpress/assets/icon-256x256.png?rev=1331499'
+	},
+	{
+		name: 'BuddyPress',
+		zip: 'buddypress.latest-stable.zip',
+		icon: 'https://ps.w.org/buddypress/assets/icon-256x256.png?rev=1331499'
+	},
+	{
+		name: 'Gutenberg',
+		zip: 'gutenberg.latest-stable.zip',
+		icon: 'https://ps.w.org/gutenberg/assets/icon-256x256.jpg'
+	},
+	{
+		name: 'Classic Editor',
+		zip: 'classic-editor.latest-stable.zip',
+		icon: 'https://ps.w.org/classic-editor/assets/icon-256x256.png'
+	},
+	{
+		name: 'Yoast SEO',
+		zip: 'wordpress-seo.latest-stable.zip',
+		icon: 'https://ps.w.org/wordpress-seo/assets/icon-256x256.png'
+	},
+	{
 		name: 'Duplicate Page',
 		zip: 'duplicate-page.latest-stable.zip',
 		icon: 'https://ps.w.org/duplicate-page/assets/icon-128x128.jpg'
@@ -26,31 +51,6 @@ const plugins = [
 		name: 'Advanced Custom Fields',
 		zip: 'advanced-custom-fields.latest-stable.zip',
 		icon: 'https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png'
-	},
-	{
-		name: 'Polylang',
-		zip: 'polylang.latest-stable.zip',
-		icon: 'https://ps.w.org/polylang/assets/icon-256x256.png?rev=1331499'
-	},
-	{
-		name: 'Gutenberg',
-		zip: 'gutenberg.latest-stable.zip',
-		icon: 'https://ps.w.org/gutenberg/assets/icon-256x256.jpg'
-	},
-	{
-		name: 'Classic Editor',
-		zip: 'classic-editor.latest-stable.zip',
-		icon: 'https://ps.w.org/classic-editor/assets/icon-256x256.png'
-	},
-	{
-		name: 'Hello Dolly',
-		zip: 'hello-dolly.latest-stable.zip',
-		icon: 'https://ps.w.org/hello-dolly/assets/icon-256x256.jpg'
-	},
-	{
-		name: 'Yoast SEO',
-		zip: 'wordpress-seo.latest-stable.zip',
-		icon: 'https://ps.w.org/wordpress-seo/assets/icon-256x256.png'
 	},
 ];
 
