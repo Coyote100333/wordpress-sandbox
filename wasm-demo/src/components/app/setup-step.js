@@ -20,8 +20,6 @@ export default ( { onSubmit } ) => {
 	const { themes, activeTheme, setActiveTheme } = useThemes();
 	const { plugins, activePlugins, toggleActivePlugin } = usePlugins();
 
-	const mShotsUrl = 'https://wordpress.com/mshots/v1/';
-
 	return (
 		<Modal
 			isFullScreen={ true }
@@ -62,11 +60,7 @@ export default ( { onSubmit } ) => {
 										gap={ 0 }
 									>
 										<FlexItem>
-											<img
-												src={ `${ mShotsUrl }${ encodeURIComponent(
-													theme.url + '?v=20221125'
-												) }` }
-											/>
+											<img src={ theme.thumbnail } />
 										</FlexItem>
 										<FlexBlock
 											as="h3"
@@ -82,12 +76,13 @@ export default ( { onSubmit } ) => {
 					</Flex>
 
 					<h4 className="wporg-section-title">
-						2. Choose a few plugins
+						2. Add a few plugins
 					</h4>
 					<Flex
 						className="wporg-tab-item-list is-plugin"
+						justify="flex-start"
 						wrap={ true }
-						gap="16px"
+						gap="8px"
 					>
 						{ plugins.map( ( plugin ) => (
 							<FlexItem
@@ -102,7 +97,7 @@ export default ( { onSubmit } ) => {
 							>
 								<a href="#">
 									<Flex
-										align="flex-start"
+										align="center"
 										direction="row"
 										gap={ 2 }
 									>
