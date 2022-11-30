@@ -1,7 +1,5 @@
-export default ( { src } ) => {
-	const styles = {
-		height: '600px',
-		width: '100%',
-	};
-	return <iframe style={ styles } src={ src } />;
-};
+import { forwardRef } from '@wordpress/element';
+
+export default forwardRef(({ src }, ref) => {
+	return <iframe src={ src } ref={ ref } />;
+});
