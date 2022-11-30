@@ -16,9 +16,6 @@
 		"./source/wp-content/themes/wporg-wasm",
 		"./source/wp-content/themes/wporg-parent-2021"
 	],
-	"plugins": [
-		"./wasm-demo"
-	],
 	"mappings": {
 		"env": "./env",
 		"wp-content/mu-plugins": "./source/wp-content/mu-plugins",
