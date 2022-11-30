@@ -1,13 +1,7 @@
 /**
  * WordPress dependencies
  */
-import {
-	Button,
-	ButtonGroup,
-	Flex,
-	FlexBlock,
-	FlexItem,
-} from '@wordpress/components';
+import { Button, Flex, FlexItem } from '@wordpress/components';
 import { useRef, forwardRef } from '@wordpress/element';
 
 /**
@@ -32,13 +26,6 @@ export default forwardRef( ( { onClickBack }, ref ) => {
 		...activePlugins.map( ( plugin ) => [ 'plugin', plugin.zip ] ),
 	] );
 
-	function wpRedirect( path ) {
-		iframeRef.current.contentWindow.postMessage(
-			{ type: 'go_to', path },
-			'*'
-		);
-	}
-
 	const url = `${ BASE_URL }?${ queryString }`;
 
 	return (
@@ -51,13 +38,9 @@ export default forwardRef( ( { onClickBack }, ref ) => {
 					</Button>
 				</FlexItem>
 			</Flex>
-            <div className="wporg-demo__viewport">
-    			<Iframe
-    				src={ url }
-    				ref={ iframeRef }
-    				
-    			/>
-            </div>
+			<div className="wporg-demo__viewport">
+				<Iframe src={ url } ref={ iframeRef } />
+			</div>
 		</div>
 	);
 } );

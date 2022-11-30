@@ -25,7 +25,7 @@ export default ( { onSubmit } ) => {
 			isFullScreen={ true }
 			title="In-Browser WordPress"
 			onRequestClose={ onSubmit }
-            className="wporg-setup-modal"
+			className="wporg-setup-modal"
 		>
 			<p>
 				Welcome to a new and exciting way fo testing WordPress Themes
@@ -53,14 +53,17 @@ export default ( { onSubmit } ) => {
 								}
 								onClick={ () => setActiveTheme( theme ) }
 							>
-								<a href="#">
+								<a href={ theme.url }>
 									<Flex
 										align="flex-start"
 										direction="column"
 										gap={ 0 }
 									>
 										<FlexItem>
-											<img src={ theme.thumbnail } />
+											<img
+												src={ theme.thumbnail }
+												alt={ theme.name }
+											/>
 										</FlexItem>
 										<FlexBlock
 											as="h3"
@@ -95,14 +98,17 @@ export default ( { onSubmit } ) => {
 								}
 								onClick={ () => toggleActivePlugin( plugin ) }
 							>
-								<a href="#">
+								<a href={ plugin.url }>
 									<Flex
 										align="center"
 										direction="row"
 										gap={ 2 }
 									>
 										<FlexItem>
-											<img src={ plugin.icon } />
+											<img
+												src={ plugin.icon }
+												alt={ plugin.name }
+											/>
 										</FlexItem>
 										<FlexBlock
 											as="h3"
