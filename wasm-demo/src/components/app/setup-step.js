@@ -53,7 +53,12 @@ export default ( { onSubmit } ) => {
 								}
 								onClick={ () => setActiveTheme( theme ) }
 							>
-								<a href={ theme.url }>
+								<a
+									href={ theme.url }
+									onClick={ ( event ) =>
+										event.preventDefault()
+									}
+								>
 									<Flex
 										align="flex-start"
 										direction="column"
@@ -98,7 +103,12 @@ export default ( { onSubmit } ) => {
 								}
 								onClick={ () => toggleActivePlugin( plugin ) }
 							>
-								<a href={ plugin.url }>
+								<a
+									href={ plugin.url }
+									onClick={ ( event ) =>
+										event.preventDefault()
+									}
+								>
 									<Flex
 										align="center"
 										direction="row"
