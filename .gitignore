@@ -24,6 +24,6 @@ phpcs.xml.dist
 
 # ...except the actual source of this project.
 !/source/wp-content/themes
-!/source/wp-content/themes/wporg-showcase-2022
+!/source/wp-content/themes/wporg-wasm
 !/source/wp-content/mu-plugins
 lighthouse.html

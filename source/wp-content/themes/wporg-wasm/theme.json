@@ -1,0 +1,17 @@
+{
+	"//README": "Comments should be added to document important things. Use the `//{property}` format. See https://github.com/WordPress/gutenberg/issues/35099.",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"custom": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontWeight": 400,
+					"lineHeight": 1.3
+				}
+			}
+		}	
+	}
+}
